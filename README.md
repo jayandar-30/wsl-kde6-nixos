@@ -1,5 +1,11 @@
 # 🚀 NixOS WSL + KDE Plasma 6 (X11 via X410)
 
+---
+
+You can find NixOS here For WSL HERE - https://github.com/nix-community/NixOS-WSL
+
+---
+
 <img width="3840" height="2160" alt="nixos-wallpaper-catppuccin-macchiato" src="https://github.com/user-attachments/assets/8dbc7343-4bd9-4f88-81fe-dbbe0046e7d4" />
 
 A clean, reproducible, and stable setup for running **KDE Plasma 6** on **NixOS inside WSL**, using **X410** as the X11 server on Windows.
@@ -104,8 +110,6 @@ cd wsl-kde6-nixos
 sudo nixos-rebuild switch --flake .#nixos
 
 Or look here: https://github.com/vinberg88/wsl-kde6-nixos/blob/main/NIXOS-KDE6.txt
-
-You can find NixOS here For WSL HERE - https://github.com/nix-community/NixOS-WSL
 
 Tools that i USE for WSL - NixOS - Microsoft - Linux - Windows 11 - KDE 6 - 2025
 
