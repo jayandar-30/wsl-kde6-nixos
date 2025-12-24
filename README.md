@@ -97,9 +97,9 @@ This setup intentionally avoids:
 
 ## 🧠What do i need for install kde via NIXOS ?
 
-Fresh install NIXOS WSL - NO update needed.
-Install git look in description..
-That all =]
+- Fresh install NIXOS WSL - NO update needed.
+- Install git look in description..
+- Thats all =]
 
 ## ✨ How to install...
 
