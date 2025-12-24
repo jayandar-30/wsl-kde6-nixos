@@ -49,5 +49,5 @@
 
   security.sudo.wheelNeedsPassword = false;
 
-  home-manager.users.mattias = import ./home.nix;
+  home-manager.users.nixos = import ./home.nix;
 }
