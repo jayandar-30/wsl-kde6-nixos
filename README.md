@@ -1,5 +1,11 @@
 # 🚀 NixOS WSL + KDE Plasma 6 (X11 via X410)
 
+![NixOS](https://img.shields.io/badge/NixOS-25.05-blue?logo=nixos)
+![KDE Plasma](https://img.shields.io/badge/KDE-Plasma%206-1d99f3?logo=kde)
+![WSL2](https://img.shields.io/badge/WSL-2-blue?logo=windows)
+![X11](https://img.shields.io/badge/X11-Enabled-green)
+![License](https://img.shields.io/github/license/vinberg88/wsl-kde6-nixos)
+
 ---
 
 You can find NixOS here For WSL HERE - https://github.com/nix-community/NixOS-WSL
