@@ -5,6 +5,7 @@
 ![WSL2](https://img.shields.io/badge/WSL-2-blue?logo=windows)
 ![X11](https://img.shields.io/badge/X11-Enabled-green)
 ![Stars](https://img.shields.io/github/stars/vinberg88/wsl-kde6-nixos?style=flat)
+<a href='https://ko-fi.com/F1F51QTD56' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 ---
 
