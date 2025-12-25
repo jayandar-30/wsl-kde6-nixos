@@ -198,14 +198,6 @@ nameserver 172.20.208.1 <-- if you se this all works =] Your ip there...
 
 ------------------------------------------------
 
-Install Gimp / LibreOffice / Blanket For NIXOS and KDE 6
-
-nix-env -iA nixos.gimp3-with-plugins
-nix-env -iA nixos.libreoffice-qt-fresh
-nix-env -iA nixos.blanket
-
-------------------------------------------------
-
 Install Hyfetch - Like Neofetch but more GAY =]
 
 nix-env -iA nixos.hyfetch
@@ -263,4 +255,3 @@ Regards Mattias Vinberg - NixOS - KDE 6 - SweDen - WSL - X410 - Linux - Microsof
 MEDIA: MATTIAS VINBERG - SWEDEN - STOCKHOLM - 2025 - NIXOS & WSL
 
 ------------------------------------
-
