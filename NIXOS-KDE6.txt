@@ -1,7 +1,10 @@
 NixOS and KDE 6 Auto install KDE 6 via NixOS and Windows 11 - WSL - Linux - YouTube - GitHub - 2025
 
 How to install KDE 6 via NIXOS - WSL - TEXT
+
 https://github.com/vinberg88/wsl-kde6-nixos/blob/main/NIXOS-KDE6.txt
+
+https://github.com/vinberg88/wsl-kde6-nixos
 
 How to install KDE 6 via NIXOS - WSL - MOVIE
 Comming Sone...
@@ -252,4 +255,5 @@ Regards Mattias Vinberg - NixOS - KDE 6 - SweDen - WSL - X410 - Linux - Microsof
 MEDIA: MATTIAS VINBERG - SWEDEN - STOCKHOLM - 2025 - NIXOS & WSL
 
 ------------------------------------
+
 
