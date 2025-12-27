@@ -1,4 +1,4 @@
-NixOS and KDE 6 - How To install KDE 6 via NixOS and Windows 11 - WSL - Linux - YouTube - GitHub - 2025
+NixOS and KDE 6 Auto install KDE 6 via NixOS and Windows 11 - WSL - Linux - YouTube - GitHub - 2025
 
 How to install KDE 6 via NIXOS - WSL - TEXT
 https://github.com/vinberg88/wsl-kde6-nixos/blob/main/NIXOS-KDE6.txt
@@ -121,11 +121,8 @@ nix-env -iA nixos.gitSVN
 nix-env -iA nixos.home-manager
 nix-env -iA nixos.flake-edit
 nix-env -iA nixos.flake-checker
-nix-env -iA nixos.zsh
 nix-env -iA nixos.dbus
 nix-env -iA nixos.systemdUkify
-nix-env -iA nixos.justbuild
-nix-env -iA nixos.just
 nix-env -iA nixos.xorg.xorgserver
 nix-env -iA nixos.xorg.xf86inputevdev
 nix-env -iA nixos.xorg.xf86inputsynaptics
@@ -255,3 +252,4 @@ Regards Mattias Vinberg - NixOS - KDE 6 - SweDen - WSL - X410 - Linux - Microsof
 MEDIA: MATTIAS VINBERG - SWEDEN - STOCKHOLM - 2025 - NIXOS & WSL
 
 ------------------------------------
+
