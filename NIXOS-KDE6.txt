@@ -7,7 +7,8 @@ https://github.com/vinberg88/wsl-kde6-nixos/blob/main/NIXOS-KDE6.txt <--install
 https://github.com/vinberg88/wsl-kde6-nixos <-- more all around KDE 6 and NIXOS
 
 How to install KDE 6 via NIXOS - WSL - MOVIE
-Comming Sone...
+
+https://www.youtube.com/watch?v=FQ1C9Sz2Nbg
 
 You can find NixOS here For WSL HERE - https://github.com/nix-community/NixOS-WSL
 
@@ -255,6 +256,3 @@ Regards Mattias Vinberg - NixOS - KDE 6 - SweDen - WSL - X410 - Linux - Microsof
 MEDIA: MATTIAS VINBERG - SWEDEN - STOCKHOLM - 2025 - NIXOS & WSL
 
 ------------------------------------
-
-
-
